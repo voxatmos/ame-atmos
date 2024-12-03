@@ -2,18 +2,19 @@
 
 Various userscripts for the music hoarding community.
 
-# Ame VoxAtmos Edition
+# Ame for VoxAtmos
 
-A special fork of the OG Ame to fast-pick Dolby Atmos Track from Apple Music.
+A fork of Ame that is specifically tailored to fast-pick Dolby Atmos Track from Apple Music.
+More features will deploy to meet the need of VoxAtmos.com, the Chinese Dolby Atmos Database.
+
+为查看Apple Music的杜比全景声特别修改的Ame脚本。
+未来的功能也都会围绕华语杜比全景声资料库VoxAtmos.com的需求进行调整。
 
 ## Getting Started
 
-Install [ViolentMonkey](https://violentmonkey.github.io) or [TamperMonkey](https://tampermonkey.net) then proceed to installing any of the editions:
+Install [ViolentMonkey recommend on Chrome/Edge](https://violentmonkey.github.io) or [TamperMonkey better with Firefox](https://tampermonkey.net) then proceed to installing any of the editions:
 
-* [Apple Music](https://gitlab.com/dosolo/ame-atmos/-/raw/main/dist/applemusic.user.js)
-* [MusicBrainz](https://gitlab.com/dosolo/ame-atmos/-/raw/main/dist/musicbrainz.user.js)
-* [MusicBrainz - Works](https://gitlab.com/dosolo/ame-atmos/-/raw/main/dist/musicbrainz-works.user.js)
-* [VGMdb](https://gitlab.com/dosolo/ame-atmos/-/raw/main/dist/vgmdb.user.js)
+* [Ame for VoxAtmos](https://gitlab.com/dosolo/ame-atmos/-/raw/main/dist/applemusic.user.js)
 
 ## Editions
 
@@ -34,7 +35,8 @@ Feature rundown for all editions of Ame.
 * Lyrics downloading.
 * Search MH Covers.
 
-### Ame (MusicBrainz)
+### Ame ([MusicBrainz](https://gitlab.com/dosolo/ame-atmos/-/raw/main/dist/musicbrainz.user.js))
+
 
 * Add covers directly from MH Covers.
 * Batch download release scans.
@@ -48,11 +50,11 @@ Feature rundown for all editions of Ame.
   * Ongaku no Mori link on release page.
   * MH Covers link on release page.
 
-### Ame (MusicBrainz - Works)
+### Ame ([MusicBrainz - Works](https://gitlab.com/dosolo/ame-atmos/-/raw/main/dist/musicbrainz-works.user.js))
 
 * Workflow for adding works to MusicBrainz using minc.or.jp, jasrac.or.jp and iswcnet.cisac.org.
 
-### Ame (VGMdb)
+### Ame (* [VGMdb](https://gitlab.com/dosolo/ame-atmos/-/raw/main/dist/vgmdb.user.js))
 
 * Seed release to MusicBrainz.
 * Batch download album scans.
