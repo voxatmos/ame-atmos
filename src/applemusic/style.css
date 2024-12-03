@@ -1,0 +1,187 @@
+.ame-color-primary {
+	color: var(--systemPrimary);
+}
+
+.ame-color-secondary {
+	color: var(--systemSecondary);
+}
+
+.ame-color-tertiary {
+	color: var(--systemTertiary);
+}
+
+.ame-color-warning {
+	color: var(--systemYellow);
+}
+
+/* Hide trial upselling banner. */
+
+.upsell-banner {
+	display: none !important;
+}
+
+/* Hide foreign country banner. */
+
+.banner-container {
+	display: none !important;
+}
+
+/* Hide Open in Music button in the sidebar. */
+
+.navigation__native-cta {
+	display: none !important;
+}
+
+/* Fix artwork breaking when overflown metadata exceeds its height. */
+
+div[slot="artwork"] {
+	height: fit-content;
+}
+
+/* Add more room for error messages and button text on error pages. */
+
+.page-error {
+	width: 100% !important;
+	max-width: 960px !important;
+}
+
+/* Make release metadata selectable. */
+
+.headings__title, /* Release title */
+.headings__subtitles *, /* Release artists */
+.description * { /* Release description */
+	user-select: text;
+	-moz-user-select: text;
+	-webkit-user-select: text;
+}
+
+/* Sidebar buttons */
+
+.navigation-items__header[data-ame] {
+	border-radius: 6px;
+	font-size: 10px;
+	font-weight: 600;
+	letter-spacing: 0;
+	line-height: 1.3;
+	margin: 0 20px -3px;
+	padding: 4px 6px;
+	color: var(--systemSecondary);
+}
+
+.navigation-items__list[data-ame] {
+	font-size: 15px;
+	padding: 0 25px 9px;
+	font-weight: 400;
+	letter-spacing: 0;
+}
+
+.navigation-item[data-ame] {
+	margin-bottom: 1px;
+	height: 32px;
+	padding: 4px;
+	position: relative;
+	border-radius: 6px;
+	--linkHoverTextDecoration: none;
+}
+
+.navigation-item__link[data-ame] {
+	padding-left: 3px;
+	margin-left: -3px;
+	padding-right: 3px;
+	margin-right: -3px;
+	align-items: center;
+	border-radius: 6px;
+	box-sizing: content-box;
+	-moz-column-gap: 8px;
+	column-gap: 8px;
+	display: flex;
+	height: 100%;
+	margin: -3px;
+	padding: 3px;
+	width: 100%;
+	font-size: .8rem;
+}
+
+.navigation-item__link[data-ame] svg {
+	width: 24px;
+	height: 24px;
+	fill: var(--systemSecondary);
+	background-color: transparent;
+	display: inline-block;
+	flex-shrink: 0;
+}
+
+/* Release quality badges */
+
+.ame-album-badges-container > svg {
+	margin-right: 1em;
+	margin-top: 1em;
+	fill: var(--systemSecondary);
+}
+
+/* Release country availabilities */
+
+.ame-album-storefronts-header {
+	margin: 0 var(--bodyGutter);
+	font-size: 1.1em;
+}
+
+.ame-album-storefronts-container {
+	display: flex;
+	margin: 0 var(--bodyGutter);
+	margin-bottom: var(--bodyGutter);
+	padding-top: 1em;
+	line-height: 2.2;
+	text-align: justify;
+	flex-direction: column;
+}
+
+.ame-album-storefronts-container > div:not(:last-child):not(:empty) {
+	padding-bottom: 1em;
+}
+
+.ame-album-storefronts-container * {
+	user-select: text;
+}
+
+/* Info table */
+
+.ame-table-band {
+	background-color: #eee !important;
+}
+
+#ame-dock {
+	z-index: 999999;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: white;
+}
+
+#ame-dock-title {
+	width: 100%;
+	padding: .5rem;
+	background-color: var(--keyColorBG);
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#ame-dock-control {
+	display: flex;
+	padding: .5rem;
+	background-color: var(--pageBG);
+	align-items: center;
+	gap: 1rem;
+}
+
+#ame-dock-control input,
+#ame-dock-control select {
+	padding: .1rem;
+}
+
+#ame-dock-control button {
+	margin-top: 1px;
+	padding: .1rem;
+}

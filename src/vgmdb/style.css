@@ -1,0 +1,22 @@
+/* Scans download button. */
+
+.ame-download-scans {
+	display: block;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.ame-download-scans[data-status="loading"] {
+	color: #006ad4;
+	font-weight: bold;
+}
+
+.ame-download-scans[data-status="success"] {
+	color: #00d46a;
+	font-weight: bold;
+}
+
+.ame-download-scans[data-status="error"] {
+	color: #d40000;
+	font-weight: bold;
+}

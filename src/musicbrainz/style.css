@@ -1,0 +1,42 @@
+/* Better fit buttons on cover edit page. */
+
+span.fileinput-button.buttons {
+	display: inline-flex;
+	flex-direction: column;
+	gap: .5rem;
+}
+
+/* Minimize sidebar layout shift on release page. */
+
+.cover-art-image img {
+	width: 100%;
+	aspect-ratio: 1;
+	object-fit: contain;
+}
+
+/* Style dropdown on add cover art page. */
+
+.buttons select {
+	float: left;
+	margin: 0 7px 0 0;
+	background-image: none;
+	background-color: #EEE;
+	border: 1px solid #CCC;
+	border-top: 1px solid #EEE;
+	border-left: 1px solid #EEE;
+	font-family: "Lucida Grande",Tahoma,Arial,Verdana,sans-serif;
+	font-size: 1rem;
+	line-height: 130%;
+	text-decoration: none;
+	font-weight: 700;
+	color: #666;
+	cursor: pointer;
+	padding: 5px 10px 6px 7px;
+}
+
+.buttons select:hover,
+.buttons select:focus {
+	background-color: #DFF4FF;
+	border: 1px solid #C2E1EF;
+	color: #369;
+}

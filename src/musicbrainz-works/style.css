@@ -1,0 +1,9 @@
+.ame__mark {
+	background-color: #ffff00ee !important;
+	outline: 2px solid #ffff00ee !important;
+}
+
+.ame__mark--inner {
+	color: #000000 !important;
+	filter: brightness(.1);
+}
