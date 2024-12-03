@@ -1,6 +1,6 @@
 // ==UserScript==
-// @namespace   ame-applemusic
-// @name        Ame (Apple Music) VoxAtmos Edition
+// @namespace   ame-voxatmos
+// @name        Ame for VoxAtmos
 // @version     1.13.0
 // @author      SuperSaltyGamer
 // @run-at      document-start
