@@ -2,14 +2,18 @@
 
 Various userscripts for the music hoarding community.
 
+# Ame VoxAtmos Edition
+
+A special fork of the OG Ame to fast-pick Dolby Atmos Track from Apple Music.
+
 ## Getting Started
 
 Install [ViolentMonkey](https://violentmonkey.github.io) or [TamperMonkey](https://tampermonkey.net) then proceed to installing any of the editions:
 
-* [Apple Music](https://gitlab.com/SuperSaltyGamer/ame/-/raw/main/dist/applemusic.user.js)
-* [MusicBrainz](https://gitlab.com/SuperSaltyGamer/ame/-/raw/main/dist/musicbrainz.user.js)
-* [MusicBrainz - Works](https://gitlab.com/SuperSaltyGamer/ame/-/raw/main/dist/musicbrainz-works.user.js)
-* [VGMdb](https://gitlab.com/SuperSaltyGamer/ame/-/raw/main/dist/vgmdb.user.js)
+* [Apple Music](https://gitlab.com/dosolo/ame-atmos/-/raw/main/dist/applemusic.user.js)
+* [MusicBrainz](https://gitlab.com/dosolo/ame-atmos/-/raw/main/dist/musicbrainz.user.js)
+* [MusicBrainz - Works](https://gitlab.com/dosolo/ame-atmos/-/raw/main/dist/musicbrainz-works.user.js)
+* [VGMdb](https://gitlab.com/dosolo/ame-atmos/-/raw/main/dist/vgmdb.user.js)
 
 ## Editions
 
