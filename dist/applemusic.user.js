@@ -9,8 +9,8 @@
 // @grant       GM.addStyle
 // @grant       GM.setClipboard
 // @grant       GM.xmlHttpRequest
-// @downloadURL https://gitlab.com/dosolo/ame-atmos/-/raw/main/dist/applemusic.user.js
-// @updateURL https://gitlab.com/dosolo/ame-atmos/-/raw/main/dist/applemusic.user.js
+// @downloadURL https://github.com/voxatmos/ame-atmos/raw/refs/heads/main/dist/applemusic.user.js
+// @updateURL https://github.com/voxatmos/ame-atmos/raw/refs/heads/main/dist/applemusic.user.js
 // ==/UserScript==
 
 (function(qs){typeof define=="function"&&define.amd?define(qs):qs()})(function(){"use strict";const qs=`/*!
