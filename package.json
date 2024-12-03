@@ -1,0 +1,24 @@
+{
+	"private": true,
+	"name": "ame",
+	"author": "SuperSaltyGamer",
+	"homepage": "https://gitlab.com/SuperSaltyGamer/ame",
+	"type": "module",
+	"config": {
+		"cdn": "https://gitlab.com/SuperSaltyGamer/ame/-/raw/main/dist/"
+	},
+	"dependencies": {
+		"handsontable": "^14.5.0",
+		"jszip": "^3.10.1"
+	},
+	"devDependencies": {
+		"@types/tampermonkey": "^5.0.3",
+		"typescript": "^5.5.4",
+		"vite": "^5.4.2"
+	},
+	"scripts": {
+		"start": "node out/scripts/build.js",
+		"build": "node out/scripts/build.js --production",
+		"postinstall": "tsc -p tsconfig.scripts.json"
+	}
+}
