@@ -14,7 +14,7 @@ More features will deploy to meet the need of VoxAtmos.com, the Chinese Dolby At
 
 Install [ViolentMonkey](https://violentmonkey.github.io) (recommended on Chrome/Edge) or [TamperMonkey](https://tampermonkey.net) (better with Firefox) then proceed to installing any of the editions:
 
-* [Ame for VoxAtmos](https://gitlab.com/dosolo/ame-atmos/-/raw/main/dist/applemusic.user.js)
+* [Ame for VoxAtmos](https://github.com/voxatmos/ame-atmos/raw/refs/heads/main/dist/applemusic.user.js)
 
 ## Editions
 
