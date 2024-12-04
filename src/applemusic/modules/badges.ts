@@ -19,14 +19,13 @@ onAlbumRoute(async () => {
 	const audioTraits = album.attributes.audioTraits;
 	if (album.attributes.isMasteredForItunes) audioTraits.push("adm");
 
-	const tracks = album.relationships.tracks.data;
-    const SongTrait = [];
-    tracks.forEach((track) => {
-        if (track.type === "songs" && track.attributes && track.attributes.audioTraits) {
-            SongTrait.push(...track.attributes.audioTraits);
-        }
-    });
-	
+	let SongTraitsHasAtmos: boolean = false;
+	for (const track of album.relationships.tracks.data) {
+ 	if (track.type === "songs" && track.attributes?.audioTraits.includes("atmos")) {
+        SongTraitsHasAtmos = true;
+        break;
+    }
+}	
 	const containerEl = fromHTML<HTMLParagraphElement>(`<p class="ame-album-badges-container"></p>`);
 
 	if (audioTraits.includes("lossy-stereo")) containerEl.insertAdjacentHTML("beforeend", lossyBadge);
@@ -35,7 +34,7 @@ onAlbumRoute(async () => {
 	if (audioTraits.includes("atmos")) containerEl.insertAdjacentHTML("beforeend", atmosBadge);
 	if (audioTraits.includes("adm")) containerEl.insertAdjacentHTML("beforeend", admBadge);
 	if (audioTraits.includes("spatial")) containerEl.insertAdjacentHTML("beforeend", spatialBadge);
-	if (SongTraits.includes("atmos")) containerEl.insertAdjacentHTML("beforeend", atmosSingleBadge);
+	if (SongTraitsHasAtmos) containerEl.insertAdjacentHTML("beforeend", atmosSingleBadge);
 
 	refEl.after(containerEl);
 });
